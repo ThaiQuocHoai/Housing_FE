@@ -348,3 +348,294 @@ header{
     background-color: #00cdce;
     text-align: center;
 }
+
+.col-5 #small-dialog {
+    display: none;
+}
+
+#port h1{
+    padding: 30px 0;
+    font-size: 60px;
+}
+
+#port .row .col-4{
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+#port .row .col-4 img{
+    width: 100%;
+}
+
+#port .row .col-4:hover .port__text .port__text1{
+    opacity: 1;
+}
+
+#port .row .col-4 .port__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    width: 80%;
+    height: 90%;
+}
+
+.port__text .port__text1{
+    background-color: #00000099;
+    padding: 20px 70px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+.port__text .port__text1 h3{
+    color: #00cdce;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.port__text .port__text1 p{
+    color: white;
+}
+
+#port .row .col-4 a{
+    width: 90%;
+    height: 100%;
+    color: transparent;
+    position: absolute;
+    z-index: 1;
+}
+
+#port .row{
+    padding-bottom: 50px;
+}
+
+#subscribe{
+    background-color: #00cdce;
+    height: 400px;
+}
+
+#subscribe h1{
+    padding: 50px 0;
+    font-size: 60px;
+}
+
+#subscribe .container{
+    padding: 0 200px;
+}
+
+#subscribe .container p{
+    color: white;
+}
+
+#subscribe .container form input{
+    padding: 15px 10px;
+    font-size: 10px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}
+
+#subscribe .container form button{
+    margin: 20px 0;
+    border: none;
+    font-size: 25px;
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+
+#subscribe .container form button:hover{
+    background-color: lightgray;
+    color: black;
+    border: 1px solid black;
+}
+
+#agent h1{
+    font-size: 60px;
+    padding: 30px 0;
+}
+
+#agent .agent__text{
+    line-height: 10px;
+    background-color: rgba(0, 0, 0, 0.79);
+    height: 120px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#agent .agent__text h3{
+    color: #00cdce;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+#agent .agent__text p{
+    font-size: 15px;
+}
+
+#agent .agent__text a i{
+    color: white;
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+#agent .row .col-3:hover h3{
+    color: white;
+}
+
+.agent__text .fb{
+    transition: 1s;
+}
+.agent__text .tw{
+    transition: 1s;
+}
+.agent__text .rs{
+    transition: 1s;
+}
+
+.agent__text .fb:hover{
+    transition: 1s;
+    background-color: #3b5998;
+}
+.agent__text .tw:hover{
+    transition: 1s;
+    background-color: #55acee;
+}
+.agent__text .rs:hover{
+    transition: 1s;
+    background-color: #f26522;
+}
+
+#contact h1{
+    font-size: 60px;
+    padding: 50px;
+}
+
+#contact .row .col-6 input{
+    padding: 10px 10px;
+    background-color:rgb(239, 239, 239);
+    outline: none;
+    font-size: 15px;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid #999;
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+#contact .row .col-6 input:hover{
+    border-bottom: 2px solid black;
+}
+
+#contact .row .col-6 textarea{
+    padding: 10px 10px;
+    background-color:rgb(239, 239, 239);
+    outline: none;
+    font-size: 15px;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid #999;
+    margin-bottom: 20px;
+    transition: 1s;
+    height: 65%;
+}
+
+#contact .row .col-6 textarea:hover{
+    border-bottom: 2px solid black;
+}
+
+#contact .row .col-6 button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 44px;
+    transition: .5s;
+    border: none;
+    outline: none;
+}
+
+
+#contact .row .col-6 button:hover{
+    background-color: #00cdce;
+    color: black;
+}
+
+footer{
+    height: 100px;
+    background-color: #00cdce;
+    color: white;
+}
+
+footer span a{
+    color: red;
+    text-decoration: none;
+    transition: .5s;
+}
+
+footer span a:hover{
+    color: white;
+}
+
+footer a i{
+    color: white;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    line-height: 25px!important;
+    text-align: center;
+    margin: 0 10px;
+}
+
+footer .fb{
+    margin-left: 150px;
+}
+
+footer a i{
+    transition: .5s;
+}
+
+footer .fb:hover{
+    color: #3b5998;
+}
+footer .tw:hover{
+    color: #55acee;
+}
+footer .rs:hover{
+    color: #f26522;
+}
+footer .vk:hover{
+    color: #3b5998;
+}
+
+.backtotop{
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    z-index: 2;
+}
+
+.backtotop a{
+    opacity: 0;
+}
+
+.backtotop .cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+  
+
+  

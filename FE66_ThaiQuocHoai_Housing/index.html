@@ -18,6 +18,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./lib/lightbox-lib/lightbox2/dist/css/lightbox.css">
 </head>
 
 <body>
@@ -205,12 +206,17 @@
     <section id="more">
         <div class="row">
             <div class="col-5">
-                <a href=""><i class="fa fa-play-circle"></i></a>
-                
+                <a data-fslightbox="lightbox" href="#vimeo"><i class="fa fa-play-circle"></i></a>
+                <div id="small-dialog">
+                    <iframe src="https://player.vimeo.com/video/106770833" id="vimeo" width="1000px" height="1000px"
+                        frameBorder="0" allow="autoplay; fullscreen" allowFullScreen>#document
+                    </iframe>
+                </div>
             </div>
             <div class="col-7">
                 <h1 class="py-3">Get more..</h1>
-                <p style="line-height: 35px; color: white; padding: 0 50px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut minim
+                <p style="line-height: 35px; color: white; padding: 0 50px;">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut minim
                     veniam, labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
                     nulla pariatur.</p>
@@ -220,6 +226,181 @@
         </div>
     </section>
 
+    <section id="port" class="text-center mt-5 container">
+        <h1>Portfolio</h1>
+        <div class="row ">
+            <div class="col-4">
+                <a href="./image/img1.jpg" data-lightbox="image-1"></a>
+                <img src="./image/img1.jpg" alt="">
+                <div class="port__text">
+                    <div class="port__text1">
+                        <h3 class="text-uppercase">gallery</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-4">
+                <a href="./image/img2.jpg" data-lightbox="image-1"></a>
+                <img src="./image/img2.jpg" alt="">
+                <div class="port__text">
+                    <div class="port__text1">
+                        <h3 class="text-uppercase">gallery</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-4">
+                <a href="./image/img3.jpg" data-lightbox="image-1"></a>
+                <img src="./image/img3.jpg" alt="">
+                <div class="port__text">
+                    <div class="port__text1">
+                        <h3 class="text-uppercase">gallery</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-4">
+                <a href="./image/img4.jpg" data-lightbox="image-1"></a>
+                <img src="./image/img4.jpg" alt="">
+                <div class="port__text">
+                    <div class="port__text1">
+                        <h3 class="text-uppercase">gallery</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-4">
+                <a href="./image/img5.jpg" data-lightbox="image-1"></a>
+                <img src="./image/img5.jpg" alt="">
+                <div class="port__text">
+                    <div class="port__text1">
+                        <h3 class="text-uppercase">gallery</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-4">
+                <a href="./image/img6.jpg" data-lightbox="image-1"></a>
+                <img src="./image/img6.jpg" alt="">
+                <div class="port__text">
+                    <div class="port__text1">
+                        <h3 class="text-uppercase">gallery</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="subscribe">
+        <div class="sub__item container text-center">
+            <h1>Subscribe</h1>
+            <p>consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi</p>
+
+            <form>
+                <input type="email" placeholder="Email" size="80" required> <br />
+                <button>Click</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="agent" class=" container text-center mt-5">
+        <h1>Our Agents</h1>
+        <div class="row mb-5">
+            <div class="col-3">
+                <img src="./image/t1.jpg" alt="">
+                <div class="agent__text">
+                    <h3>KAT WALLY</h3>
+                    <p>Lorem Ipsum</p>
+                    <a href="#"><i class="fab fa-facebook-f fb"></i></a>
+                    <a href="#"><i class="fab fa-twitter tw"></i></a>
+                    <a href="#"><i class="fa fa-rss rs"></i></i></a>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="./image/t2.jpg" alt="">
+                <div class="agent__text">
+                    <h3>JOHN MAX</h3>
+                    <p>Lorem Ipsum</p>
+                    <a href="#"><i class="fab fa-facebook-f fb"></i></a>
+                    <a href="#"><i class="fab fa-twitter tw"></i></a>
+                    <a href="#"><i class="fa fa-rss rs"></i></i></a>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="./image/t3.jpg" alt="">
+                <div class="agent__text">
+                    <h3>ROY KENT</h3>
+                    <p>Lorem Ipsum</p>
+                    <a href="#"><i class="fab fa-facebook-f fb"></i></a>
+                    <a href="#"><i class="fab fa-twitter tw"></i></a>
+                    <a href="#"><i class="fa fa-rss rs"></i></i></a>
+                </div>
+            </div>
+            <div class="col-3">
+                <img src="./image/t4.jpg" alt="">
+                <div class="agent__text">
+                    <h3>JOY IDSON</h3>
+                    <p>Lorem Ipsum</p>
+                    <a href="#"><i class="fab fa-facebook-f fb"></i></a>
+                    <a href="#"><i class="fab fa-twitter tw"></i></a>
+                    <a href="#"><i class="fa fa-rss rs"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7491.321888332529!2d94.92568900000002!3d20.148188!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x229dbaae31b864b9!2sZarmani!5e0!3m2!1svi!2sin!4v1619936756112!5m2!1svi!2sin"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section id="contact" class="text-center container mt-3">
+        <h1>Contact Us</h1>
+        <form>
+            <div class="row mb-5">
+                <div class="col-6">
+                    <input type="text" required placeholder="Name">
+                    <input type="text" required placeholder="Last name">
+                    <input type="email" required placeholder="Email">
+                    <input type="phone" required placeholder="Phone">
+                </div>
+                <div class="col-6">
+                    <textarea placeholder="Message" required></textarea>
+                    <button>Submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer__text container text-center pt-5">
+            <span class="mr-5">© 2017 Housing. All Rights Reserved | Design by <a
+                    href="https://w3layouts.com/">W3layouts</a></span>
+            <a href="#" class="ml-5"><i class="fab fa-facebook-f fb"></i></a>
+            <a href="#"><i class="fab fa-twitter tw"></i></a>
+            <a href="#"><i class="fa fa-rss rs"></i></a>
+            <a href="#"><i class="fab fa-vk vk"></i></a>
+        </div>
+    </footer>
+
+    <div class="backtotop">
+        <a href="#" class="cd-top text-replace js-cd-top">
+            <img src="./image/arrowup.png" alt=""></i></a>
+    </div>
 
 
     <!-- Optional JavaScript -->
@@ -237,9 +418,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
         integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
         crossorigin="anonymous"></script>
+    <script src="./lib/back-to-top-master/assets/js/util.js"></script>
+    <script src="./lib/back-to-top-master/assets/js/main.js"></script>
 
     <script src="./lib/owlcarosel/owl.carousel.min.js"></script>
     <script src="./lib/countup/jquery.countup.min.js"></script>
+    <script src="./lib/fslightbox/fslightbox.js"></script>
+    <script src="./lib/lightbox-lib/lightbox2/dist/js/lightbox.js"></script>
 
     <script>
         $(".counter").countUp();
@@ -260,6 +445,13 @@
     <script>
         $('#myModal').on('shown.bs.modal', function () {
             $('#myInput').trigger('focus')
+        })
+    </script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'positionFromTop': 200
         })
     </script>
 </body>
