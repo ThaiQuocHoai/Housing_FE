@@ -41,7 +41,7 @@
 header{
     background: #00000050;
     position: fixed;
-    z-index: 999;
+    z-index: 9;
     width: 100%;
 }
 
@@ -635,7 +635,9 @@ footer .vk:hover{
 .backtotop .cd-top--is-visible { 
     visibility: visible;
     opacity: 1;
-  }
-  
+}
 
-  
+.lightspeed-box.lsb-active .lsb-content .lsb-control.lsb-close{
+   
+    z-index: 9999999;
+}

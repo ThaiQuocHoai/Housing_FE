@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Housing</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,11 +19,12 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./lib/lightbox-lib/lightbox2/dist/css/lightbox.css">
+    <link rel="stylesheet" href="./lib/lsb-lightbox/dist/lsb.css">
 </head>
 
 <body>
 
-    <header>
+    <header id="header">
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">Hous<span>ing</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -230,7 +231,7 @@
         <h1>Portfolio</h1>
         <div class="row ">
             <div class="col-4">
-                <a href="./image/img1.jpg" data-lightbox="image-1"></a>
+                <a href="./image/img1.jpg" class="lsb-preview" data-lsb-group="header"></a>
                 <img src="./image/img1.jpg" alt="">
                 <div class="port__text">
                     <div class="port__text1">
@@ -242,7 +243,7 @@
             </div>
 
             <div class="col-4">
-                <a href="./image/img2.jpg" data-lightbox="image-1"></a>
+                <a href="./image/img2.jpg"  class="lsb-preview" data-lsb-group="header"></a>
                 <img src="./image/img2.jpg" alt="">
                 <div class="port__text">
                     <div class="port__text1">
@@ -254,7 +255,7 @@
             </div>
 
             <div class="col-4">
-                <a href="./image/img3.jpg" data-lightbox="image-1"></a>
+                <a href="./image/img3.jpg"  class="lsb-preview" data-lsb-group="header"></a>
                 <img src="./image/img3.jpg" alt="">
                 <div class="port__text">
                     <div class="port__text1">
@@ -266,7 +267,7 @@
             </div>
 
             <div class="col-4">
-                <a href="./image/img4.jpg" data-lightbox="image-1"></a>
+                <a href="./image/img4.jpg"  class="lsb-preview" data-lsb-group="header"></a>
                 <img src="./image/img4.jpg" alt="">
                 <div class="port__text">
                     <div class="port__text1">
@@ -278,7 +279,7 @@
             </div>
 
             <div class="col-4">
-                <a href="./image/img5.jpg" data-lightbox="image-1"></a>
+                <a href="./image/img5.jpg"  class="lsb-preview" data-lsb-group="header"></a>
                 <img src="./image/img5.jpg" alt="">
                 <div class="port__text">
                     <div class="port__text1">
@@ -290,7 +291,7 @@
             </div>
 
             <div class="col-4">
-                <a href="./image/img6.jpg" data-lightbox="image-1"></a>
+                <a href="./image/img6.jpg"  class="lsb-preview" data-lsb-group="header"></a>
                 <img src="./image/img6.jpg" alt="">
                 <div class="port__text">
                     <div class="port__text1">
@@ -402,7 +403,6 @@
             <img src="./image/arrowup.png" alt=""></i></a>
     </div>
 
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
@@ -420,11 +420,12 @@
         crossorigin="anonymous"></script>
     <script src="./lib/back-to-top-master/assets/js/util.js"></script>
     <script src="./lib/back-to-top-master/assets/js/main.js"></script>
+    <script src="./lib/lsb-lightbox/dist/lsb.min.js"></script>
 
     <script src="./lib/owlcarosel/owl.carousel.min.js"></script>
     <script src="./lib/countup/jquery.countup.min.js"></script>
     <script src="./lib/fslightbox/fslightbox.js"></script>
-    <script src="./lib/lightbox-lib/lightbox2/dist/js/lightbox.js"></script>
+    <!-- <script src="./lib/lightbox-lib/lightbox2/dist/js/lightbox.js"></script> -->
 
     <script>
         $(".counter").countUp();
@@ -447,12 +448,18 @@
             $('#myInput').trigger('focus')
         })
     </script>
-    <script>
+    <!-- <script>
         lightbox.option({
             'resizeDuration': 200,
             'wrapAround': true,
             'positionFromTop': 200
         })
+    </script> -->
+
+    <script>
+        $(window).on("load",function () {
+            $.fn.lightspeedBox();
+        });
     </script>
 </body>
 
